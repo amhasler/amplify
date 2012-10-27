@@ -61,12 +61,13 @@ STATIC_ROOT = os.path.join(PROJECT_DIR, "static")
 if os.path.exists('/Library/'): #if local on a Mac...
     DATABASES = {
         'default': {
-            'NAME': 'journal_db',       
+            'NAME': 'd3odriofpvnfmr',       
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'USER': '',
-            'PASSWORD': '',
-            'HOST': 'localhost',
-            'PORT': '',
+            'USER': 'gbzpvhjoehknhw',
+            'PASSWORD': 'RfFwBzMejeJrVijTZM1LmsMMF5',
+            'HOST': 'ec2-54-243-132-44.compute-1.amazonaws.com',
+            # 'HOST': 'localhost',
+            'PORT': '5432',
             
             },
         }
