@@ -41,7 +41,7 @@
 <!--bg and white border-->
 <div id="whiteBorder">
 
-<div id="amplifyHeading"><a href ="http://www.projectamplify.co" id="amplifyAnchor">amplify:</a><span id="innovationsHeading"><a href= "http://www.projectamplify.co" id="innovationsAnchor">innova<span id='tHeading'>t</span>ions</a></span>
+<div id="amplifyHeading"><a href ="http://www.thawing-beyond-8817.herokuapp.com" id="amplifyAnchor">amplify:</a><span id="innovationsHeading"><a href= "http://www.thawing-beyond-8817.herokuapp.com" id="innovationsAnchor">innova<span id='tHeading'>t</span>ions</a></span>
   <div id="innovationsWholeDiv"> </div>
 </div>
 
@@ -76,7 +76,7 @@
 
 
   <!--abstract-->
-  <div id="wholeLeftCol" style=display:inline>
+  <div id="wholeLeftCol">
     <div id="abstractTitle">in brief  </div>
     <div id="entireAbstractBlurb">
       <img class="triangleClosed" style="display:none" src="{{ MEDIA_URL }}/triangleTeal_Closed.png"></img>
@@ -91,12 +91,15 @@
     <span id="countryName" style=display:none> {% placeholder current_country_match_img_name %}</span>
     <div id="mapImg"></div>
 
-    <div id="preOutline">
-      <div class="collapse"> collapse all </div>
-      <div class="expand"> expand all </div>
-    </div>
-    <div id="outline">
-      {% placeholder outline %}
+
+      <div id="preOutline">
+        <div class="collapse"> collapse all </div>
+        <div class="expand"> expand all </div>
+      </div>
+    <div id="anchorForOutline">
+      <div id="outline">
+        {% placeholder outline %}
+      </div>
     </div>
   </div> <!-- closes wholeLeftCol -->
 
