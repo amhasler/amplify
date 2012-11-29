@@ -92,7 +92,7 @@ left: 0;
 height: 100%;
 width: 100%;
 z-index: 1;
-background: url('{{ MEDIA_URL}}background2.jpeg') 0px 0px repeat;
+background: url('./background2.jpeg') 0px 0px repeat;
 zoom: 1;
 display: block !important;
 }
@@ -199,7 +199,7 @@ display: block !important;
 }
 
 header #search {
-	margin-top:-5px;
+	margin-top:-1px;
 }
 
 #issue-blog-nav {
@@ -278,6 +278,7 @@ header #search {
 			font-family:"Karla",sans-serif;
 			padding:0px;
 			line-height:14px;
+			height:640px;
 		}
 		#issues-toc h2{
 			font-size:12px;

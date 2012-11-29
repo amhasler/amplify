@@ -8,10 +8,12 @@
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
 {% endaddtoblock "css" %}
 
-<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}main.css">
-<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}bootstrap.css">
-<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}main_innov.css">
 <link ref="stylesheet" type="text/css" href="{{ MEDIA_URL }}readingStyle.css" />
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}main.css">
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}main_innov.css">
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}bootstrap.css">
+<link ref="stylesheet" type="text/css" href="{{ MEDIA_URL }}readingStyle.css" />
+
 
 <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Karla' rel='stylesheet' type='text/css'>
@@ -25,7 +27,7 @@
 <script src="{{ MEDIA_URL}}modernizr-2.6.2.min.js"></script>
 <script type="text/javascript" src="{{ MEDIA_URL}}navigation.js"></script>
 <script type="text/javascript" src="{{ MEDIA_URL}}homeSetup.js"></script>
-<script type="text/javascript" src="{{ MEDIA_URL}}lightbox_me.js"></script>
+<script type="text/javascript" src="{{ MEDIA_URL}}jquery.lightbox_me.js"></script>
 <script type="text/javascript" src="{{ MEDIA_URL}}main-slider.js"></script>
 <script type="text/javascript" src="{{ MEDIA_URL}}contact.js"></script>
 <script type="text/javascript" src="{{ MEDIA_URL}}accordion.js"></script>
@@ -121,22 +123,24 @@
 				</section>
 				<aside id="get-in-touch">
 					<h2>Join Us</h2>
-					<div class="row">
-						<div class="span4 contact_trigger">
-							<a>submission<br /> contact</a>
-						</div>
-						<div class="span4">
+					<table style="text-align:center">
+					<tr class="row">
+						<td class="span4 contact_trigger">
+							<a>Submission<br /> Contact</a>
+						</td>
+						<td class="span4">
 							<a href="http://www.mitpressjournals.org/loi/itgg">Subscription<br /> Information</a>
-						</div>
-						<div class="span4" id="twitter-information">
+						</td>
+						<td class="span4" id="twitter-information">
 							<p>Twitter</p>
 							<br />
 							<a href="https://twitter.com/innovationsjrnl">Innovations Journal</a>
 							<br />
 							<br />
 							<a href="https://twitter.com/auerswald">Editor/Co-Founder <br /> Phil Auerswald</a>
-						</div>
-					</div>
+						</td>
+					</tr>
+					</table>
 				</aside>
 			</div>
 		</div>
@@ -151,28 +155,142 @@
 						<p class="issue title">Enabling Entrepreneurial Ecosystems</p>
 					</div>
 					<ul class="issue-list">
+						<a href="./enabling-entrepreneurial-ecosystems/">
 						<li class="article-info">
 							<h2 class="author">Susan Davis</h2>
 							<p class="issue-title">Enabling Entrepreneurial Ecosystems</p>
 						</li>
+						</a>
+						<a href="./entrepreneurship-middle-east-north-africa/">
 						<li class="article-info">
-							<h2 class="author">Susan Davis</h2>
-							<p class="issue-title">Enabling Entrepreneurial Ecosystems</p>
+							<h2 class="author">Ovais Naqvi</h2>
+							<p class="issue-title">Entrepreneurship in the Middle East and North Africa: Opening the Floodgates</p>
 						</li>
+						</a>
+						<a href="./prosperity-through-connectedness/">
 						<li class="article-info">
-							<h2 class="author">Susan Davis</h2>
-							<p class="issue-title">Enabling Entrepreneurial Ecosystems</p>
+							<h2 class="author">Horacio Melo</h2>
+							<p class="issue-title">Prosperity Through Connectedness</p>
 						</li>
+						</a>
+						<a href="./magic-happens/">
+						<li class="article-info">
+							<h2 class="author">Vivek Wadhwa</h2>
+							<p class="issue-title">The Magic Happens When You Focus on People</p>
+						</li>
+						</a>
+						<a href="./early-start-up-chile/">
+						<li class="article-info">
+							<h2 class="author">Ted Gonder</h2>
+							<p class="issue-title">An Early Assessment of Start-Up Chile</p>
+						</li>
+						</a>
+						<a href="./market-making/">
+						<li class="article-info">
+							<h2 class="author">Francis J.
+					            Skrobiszewski</h2>
+							<p class="issue-title">	Market Making: How Enterprise Funds Can Jump-Start Stagnant Economics</p>
+						</li>
+						</a>
+						<a href="./market-making/">
+						<li class="article-info">
+							<h2 class="author">William
+					            Scott Green, Susan Wills Amat</h2>
+							<p class="issue-title">Entrepreneurship as a Career</p>
+						</li>
+						</a>
+						<a href="./entrepreneurship-career/">
+						<li class="article-info">
+							<h2 class="author">William
+					            Scott Green, Susan Wills Amat</h2>
+							<p class="issue-title">Entrepreneurship as a Career</p>
+						</li>
+						</a>
+						<a href="./mobile-money-usage-patterns/">
+						<li class="article-info">
+							<h2 class="author">Dylan Higgins, Jake
+					            Kendall, Ben Lyon</h2>
+							<p class="issue-title">	Mobile Money Usage Patterns of Kenyan Small and Medium Enterprises</p>
+						</li>
+						</a>
+						<a href="./enabling-entrepreneurship-egypt/">
+						<li class="article-info">
+							<h2 class="author">Mohamed El Dahshan, Ahmed H. Tolba, Tamer Badreidin</h2>
+							<p class="issue-title">Enabling Entrepreneurship In Egypt: Toward A Sustainable Dynamic Model</p>
+						</li>
+						</a>
+						<a href="./creating-place-future/">
+						<li class="article-info">
+							<h2 class="author">Phillip Auerswald, Elmira Bayrasli, Sara Shroff</h2>
+							<p class="issue-title">Creating A Place For The Future: Strategies For Entrepreneurship-Led Development In Pakistan</p>
+						</li>
+						</a>
 					</ul>
+					
+					
+					
 					<div class="topline-issue-info">
-						<h2 class="issue-information">Volume 7, Issue 2 - Spring 2012</h2>
-						<p class="issue title">Enabling Entrepreneurial Ecosystems</p>
+						<h2 class="issue-information"> Volume 7, Issue 1 - Winter 2012 </h2>
+						<p class="issue title">Unleashing Ideas</p>
 					</div>
 					<ul class="issue-list">
+						<a href="./mexicos-growth/">
 						<li class="article-info">
-							<h2 class="author">susan davis</h2>
-							<p class="issue-title">enabling entrepreneurial ecosystems</p>
+							<h2 class="author">Alvaro Rodriguez Arregui</h2>
+							<p class="issue-title">Mexico's Growth Will Come From Entrepreneurship and Small and Medium-Sized Enterprises</p>
 						</li>
+						</a>
+						<a href="./dirt-and-scrap/">
+						<li class="article-info">
+							<h2 class="author">Ir. Ciputra</h2>
+							<p class="issue-title">From Dirt and Scrap to Gold: A Vision for Entrepreneurship in Indonesia</p>
+						</li>
+						</a>
+						<a href="./lighting-path/">
+						<li class="article-info">
+							<h2 class="author">Seema Aziz</h2>
+							<p class="issue-title">Lighting a Path in Pakistan</p>
+						</li>
+						</a>
+						<a href="./when-business-and-social-missions-align/">
+						<li class="article-info">
+							<h2 class="author">Elmira Bayrasli</h2>
+							<p class="issue-title">When Business and Social Missions Align</p>
+						</li>
+						</a>
+						<a href="./mitigating-resource-curse-through-legal-empowerment/">
+						<li class="article-info">
+							<h2 class="author">Fiona Darroch</h2>
+							<p class="issue-title">Mitigating the Resource Curse through Legal
+					          Empowerment</p>
+						</li>
+						</a>
+						<a href="./collective-representation-and-last-mile/">
+						<li class="article-info">
+							<h2 class="author">Sean McDonald</h2>
+							<p class="issue-title">Collective Representation and the Last
+					          Mile</p>
+						</li>
+						</a>
+						<a href="./diaspora-networks/">
+						<li class="article-info">
+							<h2 class="author">Suren G.Dutia</h2>
+							<p class="issue-title">Diaspora Networks: A New Impetus to Drive
+					          Entrepreneurship</p>
+						</li>
+						</a>
+						<a href="./agility-imperative/">
+						<li class="article-info">
+							<h2 class="author">Eric Peck, Lynndee Kemmet, Ray McGowan, C. Reed Hodgin, Bart Peintner</h2>
+							<p class="issue-title">The Agility Imperative: Emerging Knowledge Management Requirements for Stability Operations in the U.S.Army</p>
+						</li>
+						</a>
+						<a href="./using-innovation-prizes/">
+						<li class="article-info">
+							<h2 class="author">Bryony Everett, Erika Wagner, Christopher Barnett</h2>
+							<p class="issue-title">Using Innovation Prizes to Achieve the Millennium Development Goals</p>
+						</li>
+						</a>
 					</ul>
 				</div>
 			</nav>
@@ -250,8 +368,7 @@
 =======
         <li class="homeArtTitle"><span class="homeAuthor">Susan Davis</span><a href="http://thawing-beyond-8817.herokuapp.com/enabling-entrepreneurial-ecosystems/">Enabling Entrepreneurial Ecosystems</a></li>
         <li class="homeArtTitle"><span class="homeAuthor">Ovais Naqvi</span><a href="http://thawing-beyond-8817.herokuapp.com/entrepreneurship-middle-east-north-africa/">Entrepreneurship in the Middle East and North Africa: Opening the Floodgates</a></li>
-      </ul> <!-- closes Lead Essays -->
->>>>>>> a3fe2446019e354f8ab95631d33f0498149344c4
+      </ul>
       </li>
       <li class="innovCategory"><span>Case Narratives</span>
       <ul>
@@ -262,13 +379,11 @@
             Skrobiszewski</span><a href="http://thawing-beyond-8817.herokuapp.com/market-making/">Market Making: How Enterprise Funds Can Jump-Start Stagnant
           Economics</a></li>
         <li class="homeArtTitle"><span class="homeAuthor">William
-<<<<<<< HEAD
             Scott Green, Susan Wills Amat</span><a href="http://www.thawing-beyond-8817.herokuapp.com/entrepreneurship-career/">Entrepreneurship as a Career</a></li>
       </ul>
 =======
             Scott Green, Susan Wills Amat</span><a href="http://thawing-beyond-8817.herokuapp.com/entrepreneurship-career/">Entrepreneurship as a Career</a></li>
-      </ul> <!-- closes Case Narr -->
->>>>>>> a3fe2446019e354f8ab95631d33f0498149344c4
+      </ul> 
       </li>
       <li class="innovCategory"><span>Analysis</span>
       <ul>
