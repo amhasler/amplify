@@ -5,11 +5,12 @@
 
 
 {% addtoblock "css" %}
-<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL}}jquery-ui/css/custom-theme/jquery-ui.css"/>
-
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
 {% endaddtoblock "css" %}
 
-
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}main.css">
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}bootstrap.css">
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}main_innov.css">
 <link ref="stylesheet" type="text/css" href="{{ MEDIA_URL }}readingStyle.css" />
 
 <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
@@ -19,9 +20,15 @@
 {% addtoblock "js" %}
 <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>  -->
 <!-- <script type="text/javascript" src="{{ MEDIA_URL}}processing-1.4.1.js"></script>-->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+<script src="{{ MEDIA_URL}}modernizr-2.6.2.min.js"></script>
 <script type="text/javascript" src="{{ MEDIA_URL}}navigation.js"></script>
 <script type="text/javascript" src="{{ MEDIA_URL}}homeSetup.js"></script>
-
+<script type="text/javascript" src="{{ MEDIA_URL}}lightbox_me.js"></script>
+<script type="text/javascript" src="{{ MEDIA_URL}}main-slider.js"></script>
+<script type="text/javascript" src="{{ MEDIA_URL}}contact.js"></script>
+<script type="text/javascript" src="{{ MEDIA_URL}}accordion.js"></script>
 
 
 {% endaddtoblock "js" %}
@@ -40,12 +47,196 @@
 </div>
  -->
 
+		<div id="bg_image_overlay">
+			&nbsp;
+		</div>
+		
+		<header class="external clearfix">
+			<nav class="clearfix header-footer">
+				<h1 class="homeTrigger trigger" id="top-logo">
+					<a href="#"><span class="amplify-logo" id="amplify-top">amplify:</span>
+					<span class="innovations-logo" id='innovations-top'>innova<span class="logo-t">t</span>ions</span></a>
+				</h1>
+				<ul class="nav public_nav" id="top-nav">
+					<li><a href="https://twitter.com/innovationsjrnl">twitter</a></li>
+					<li><a href="http://www.amazon.com/s/ref=ntt_athr_dp_sr_2?_encoding=UTF8&field-author=Philip%20Auerswald&search-alias=digital-text">ebook</a></li>
+					<li class="about_trigger"><a href="#about">about</a></li>
+					<li class="contact_trigger">contact</li>
+					<li>
+						<form class="navbar-search pull-right" id="search">
+							<input  type="text" class="search-query span2" placeholder="Search">
+						</form>
+					</li>
+				</ul>
+				<!--
+				<form class="navbar-search pull-right">
+					<input  type="text" class="search-query span2" placeholder="Search">
+				</form>
+				-->
+			</nav>
+		</header>
+			
+		<div class="box" id="main_content">
+			<div class="box-text" id="home">
+				<aside class="nav-font" id="issue-blog-nav">
+					<nav id="issue-blog-links">
+						<p class='trigger' id="browse-issues">browse issues ></p>
+						<p class='trigger' id="browse-blog">browse blog ></p>
+					</nav>
+				</aside>
+				<div id="not-nav">
+					<section id="intro-text">
+						<p>Innovations provides cutting-edge research, narrative, and analysis about entrepreneurial solutions to global challenges.</p>
+					</section>
+					<article id="blog">
+						<h3 id="blog-title">Innovations Blog</h3>
+						<h2 id="entry-title">Taking the Science out of Scarcity</h2>
+						<p id="time-stamp">September 28, 2012</p>
+						<div id="blog-content">
+							<div id="style-content">Review of Peter Diamandis and Steven Kotler, <i>Abundance: The Future is Better than You Think, </i>New York: Free Press, 2012.</div><div><b><br />
+							</b></div>The human community occupies a planet of finite resources. As population grows, people and nations will necessarily compete with increasing ferocity. Scarcity-driven crises will provoke dramatic oscillations in human welfare, leading almost inevitably to a collapse of civilization.<br />
+							<div><br />
+							</div><div>Got that?</div><div><br />
+							</div><div>Welcome to the world of the Reverend Thomas Robert Malthus, author of <i>An Essay on the Principle&nbsp;of Population</i>. The core thesis of Malthus&#8217;s 1798 masterwork&nbsp;is neatly summarized in a line early in the book: &#8220;The power of population&nbsp;is indefinitely greater than the power in the earth to produce subsistence&nbsp;for man.&#8221;&nbsp;</div><div><br />
+							</div><div>The logic behind the argument advanced by Malthus was compelling. For over two centuries&nbsp; <i>An Essay on the Principle&nbsp;of Population</i>&nbsp;has not only&nbsp;been&nbsp;studied, but has been endlessly copied and revived in various forms. Early twentieth century&nbsp;eugenicists employed Malthusian arguments to justify inhuman controls on the reproductive freedoms of other people ... and worse. Malthusian fears came back in a widely read&nbsp;book by&nbsp;Paul and Anne Ehrlich published in 1968 and titled&nbsp;<i>The Population Bomb;&nbsp;</i>the&nbsp;Ehrlich's&nbsp;message was updated as recently as 2010 in a lead essay in&nbsp;<i>Foreign Affairs </i>titled "The New Population Bomb." &nbsp;Woven throughout this two-centuries old body of work is a single unifying theme: the reproductive power of people is a paramount problem for society as a whole. Beware the future.</div><div><i><br />
+							</i></div><div>So much for the theory of demographic doom. What of the facts? <br />
+							Well, the facts are fairly straightforward. Human population really started to take off at the end of the eighteenth century, just when Malthus was writing his famed book<i>. </i>That is also when the industrial revolution began. That is also when the institutions of market-based democracy first assumed something like their modern form. And that is also (not coincidentally) where the welfare of human beings surged forward, breaking a pattern of relative stagnation that previously had lasted for millennia.&nbsp;</div><div><br />
+							</div><div>In other words, the more populous the planet has become, the better off human being have been. This is a trend that has been ongoing for centuries. (For a summary, see <a href="http://www.youtube.com/watch?v=jbkSRLYSojo">this talk</a> by Hans Rosling. Must watch if you haven't seen it already.)</div><div><br />
+							</div><div>Peter Diamandis and Steven Kotler summarize this very history at the start of their very-soon-to-be-released book,&nbsp;<i><a href="http://www.amazon.com/Abundance-Future-Better-Than-Think/dp/1451614217/ref=sr_1_1?ie=UTF8&amp;qid=1329431488&amp;sr=8-1">Abundance: The Future is Better than You Think</a>. </i>The title suggests that this book provides a refutation of neo-Malthusian fear mongering. And that is exactly what it does, and more. Fears of scarcity driven crises, the authors argue, have been overwhelmed by the trend of history<span style="background-color: white; color: #444444; font-family: 'Trebuchet MS', Trebuchet, Verdana, sans-serif; font-size: 15px; line-height: 21px;">&#8212;</span>a trend which leads persuasively toward inclusive prosperity, not demographic doom.</div><div><br />
+							</div><div>Now, as readers of this blog are aware, I am also the author of a <a href="http://www.amazon.com/Coming-Prosperity-Entrepreneurs-Transforming-Economy/dp/0199795177/ref=sr_1_1?ie=UTF8&amp;qid=1329406669&amp;sr=8-1">very-soon-to-be-released book</a> about the unparalleled possibilities of today. So, in that particular context, what was my reaction to <i>Abundance? </i>Put simply: psyched.&nbsp;I found <i>Abundance</i> to be a thrilling read<span style="background-color: white; color: #444444; font-family: 'Trebuchet MS', Trebuchet, Verdana, sans-serif; font-size: 15px; line-height: 21px;">&#8212;</span>both because of the trends and stories the authors present, but also, selfishly, because this book serves as the perfect companion to my own&nbsp;<i>The Coming Prosperity </i>(and vice versa)<i>.&nbsp;</i></div><div><br />
+							</div><div>Here's why: The fact that a proposition has held true in the past is no guarantee that it will hold in the future. In order to "connect the dots going forward" (to spin the famous quote by Steve Jobs) you need to understand not just what happened in the past, but how it happened. In <i>The Coming Prosperity</i>&nbsp;I focus on the "how" of entrepreneurship, with some reference to technology; Diamandis and Kotler focus on the "how" of technology, with some reference to entrepreneurship.&nbsp;The complementarity is almost as if by design. Since the need for a new narrative is profound, it is delightful to have such good company in the effort. (Umair Haque's <i><a href="http://www.amazon.com/Betterness-Economics-Humans-Kindle-ebook/dp/B006K5K5GI/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1329431713&amp;sr=1-1">Betterness</a></i>&nbsp;is also notable in the context, along a different dimension of complementarity, as is Vijay V. Vaitheeswaran's <i><a href="http://www.amazon.com/Need-Speed-Greed-Innovation-Businesses/dp/0062075993/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1329432896&amp;sr=1-1">Need, Speed, and Greed</a>.</i>)</div><div><br />
+							</div><div><i>Abundance</i>&nbsp;presents a colorful inventory of innovation threads, woven together to form a rich tapestry of opportunity inviting us into the twenty-first century. If the book has a flaw, it is that the tour of the future&nbsp;Diamandis and Kotler offer is so wide-ranging that it is almost dizzying. Abundance itself abounds in agriculture, energy, education, health care, space travel and beyond.</div><div><br />
+							</div><div>The enthusiasm the authors show for their topic is excusable. Diamandis in particular has been roaming the technological frontier full-time for nearly three decades, notably as the founder of the X PRIZE Foundation and the co-founder and chairman of Singularity University. The first of these organizations has led a veritable explosion of interest in the use of prizes to incent innovation; the second is a fascinating and deeply provocative new entrant in the world of disruption in higher education.</div><div><br />
+							</div><div>Early on Diamandis makes a critical point that it is important to note: "I am not talking about Trump Towers, Mercedez-Benz, and Gucci. Abundance is not about providing everyone on the planet with a life of luxury--rather it's about providing all with a life of possibility .. a world where everyone's days are spent dreaming and doing, not scrapping and scraping."</div><div><br />
+							</div><div>If you already believe, as I do, that ours is the most dynamic and promising era in human history, you will greatly enjoy the compendium of technologically-inspired futures that Diamandis and Kotler offer. On the other hand, if you doubt for a moment that <i>Abundance</i>&nbsp;and not scarcity is the organizing principle for the twenty-first century, then you truly owe it to yourself to buy this book. The feast of possibilities that awaits you is one you will savor with each page, and not soon forget.</div>
+						</div>
+					</article>
+				</div>	
+			</div>
+			
+			<div class="box-text" id="about">
+				<section class="about-text">
+					<p id="primary-paragraph">Innovations is the premier academic journal to discuss issues related to international development, social enterprise, and entrepreneurship-driven economic change and growth.</p>
+					<p id="secondary-paragraph">Phillip Auerswald, Iqbal Quadir, and Winthrop Carty started Innovations in 2006 based on the idea that the best insights into entrepreneurship and international development  were the practitioners themselves.</p>
+				</section>
+				<aside id="get-in-touch">
+					<h2>Join Us</h2>
+					<div class="row">
+						<div class="span4 contact_trigger">
+							<a>submission<br /> contact</a>
+						</div>
+						<div class="span4">
+							<a href="http://www.mitpressjournals.org/loi/itgg">Subscription<br /> Information</a>
+						</div>
+						<div class="span4" id="twitter-information">
+							<p>Twitter</p>
+							<br />
+							<a href="https://twitter.com/innovationsjrnl">Innovations Journal</a>
+							<br />
+							<br />
+							<a href="https://twitter.com/auerswald">Editor/Co-Founder <br /> Phil Auerswald</a>
+						</div>
+					</div>
+				</aside>
+			</div>
+		</div>
+		
+		
+		<aside class="box" id="issue-list">
+			<nav id="issues-toc">
+				<div class="nav-font trigger" id="main">&lt; return to main</div>
+				<div id="accordion">
+					<div class="topline-issue-info">
+						<h2 class="issue-information">Volume 7, Issue 2 - Spring 2012</h2>
+						<p class="issue title">Enabling Entrepreneurial Ecosystems</p>
+					</div>
+					<ul class="issue-list">
+						<li class="article-info">
+							<h2 class="author">Susan Davis</h2>
+							<p class="issue-title">Enabling Entrepreneurial Ecosystems</p>
+						</li>
+						<li class="article-info">
+							<h2 class="author">Susan Davis</h2>
+							<p class="issue-title">Enabling Entrepreneurial Ecosystems</p>
+						</li>
+						<li class="article-info">
+							<h2 class="author">Susan Davis</h2>
+							<p class="issue-title">Enabling Entrepreneurial Ecosystems</p>
+						</li>
+					</ul>
+					<div class="topline-issue-info">
+						<h2 class="issue-information">Volume 7, Issue 2 - Spring 2012</h2>
+						<p class="issue title">Enabling Entrepreneurial Ecosystems</p>
+					</div>
+					<ul class="issue-list">
+						<li class="article-info">
+							<h2 class="author">susan davis</h2>
+							<p class="issue-title">enabling entrepreneurial ecosystems</p>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</aside>
+		
+		<aside class="box" id="blog-list">
+			<nav class="nav-font">
+				<p class="trigger" id="main2">&lt; return to main</p>
+			</nav>
+			<div id="blog-message">
+				<div>We're just getting started....so come back soon to hear more about the issues (and solutions) that matter to everyone.</div>
+			</div>
+		</aside>
+		
+		<section class="box" id="contact">
+			<div id="top">
+				<img src="{{ MEDIA_URL }}itgg.jpg" alt="innovations-cover" id="cover-shot"/>
+				<div id="contact-text">Innovations wants to know what matters to you. Let us know and we'll be in touch.</div>
+				<div id="confirmation">Thanks!</div>
+			</div>
+			<form id="contact-submission">
+				<div>Name</div>
+				<input type="text" name="fname" />
+				<div>E-mail</div>
+				<input type="text" name="email" />
+				<div>Message</div>
+				<textarea name="message" id="message"></textarea>
+				<br />
+				<input class="btn" type="button" name="submit" id="submit" value="Submit"/>
+			</form>
+		</section>
+		
+
+		<footer class="site-footer">
+			<nav class="header-footer">
+				<ul id="bottom-nav">
+					<li><div class="homeTrigger trigger" id="bottom-logo">
+							<span class="amplify-logo" id="amplify-bottom">amplify:</span>
+							<span class="innovations-logo" id="innovations-bottom">innova<span class="logo-t">t</span>ions</span>
+					</div></li>
+					<li><a href="https://twitter.com/innovationsjrnl">twitter</a></li>
+					<li><a href="http://www.amazon.com/s/ref=ntt_athr_dp_sr_2?_encoding=UTF8&field-author=Philip%20Auerswald&search-alias=digital-text">ebook</a></li>
+					<li class="about_trigger"><a href="#about">about</a></li>
+					<li class="contact_trigger"><a href="#">contact</a></li>
+				</ul>
+			</nav>
+		</footer>
+
+		<script src= "//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
+
+     <script>
+         var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+         (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+         g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+         s.parentNode.insertBefore(g,s)}(document,'script'));
+     </script>
+<!--
 <div id="homeSlate">
   <div id="amplifyHome">amplify: <span id="innovationsHeading">innova<span id='tHeading'>t</span>ions</span>
     <div id="innovationsHome"> </div>
   </div>
 
-  <div id="amplifySpiel"></div>
+  <div id="amplifySpiel">this is the amplify spiel</div>
 
   <ul id="innovIndex">
     <li class="volHeading"><span> Volume 7, Issue 2 - Spring 2012 </span> <span class="issueTitle">Enabling Entrepreneurial Ecosystems </span>
@@ -54,7 +245,7 @@
       <ul>
         <li class="homeArtTitle"><span class="homeAuthor">Susan Davis</span><a href="http://www.thawing-beyond-8817.herokuapp.com/enabling-entrepreneurial-ecosystems/">Enabling Entrepreneurial Ecosystems</a></li>
         <li class="homeArtTitle"><span class="homeAuthor">Ovais Naqvi</span><a href="http://www.thawing-beyond-8817.herokuapp.com/entrepreneurship-middle-east-north-africa/">Entrepreneurship in the Middle East and North Africa: Opening the Floodgates</a></li>
-      </ul> <!-- closes Lead Essays -->
+      </ul>
       </li>
       <li class="innovCategory"><span>Case Narratives</span>
       <ul>
@@ -66,14 +257,14 @@
           Economics</a></li>
         <li class="homeArtTitle"><span class="homeAuthor">William
             Scott Green, Susan Wills Amat</span><a href="http://www.thawing-beyond-8817.herokuapp.com/entrepreneurship-career/">Entrepreneurship as a Career</a></li>
-      </ul> <!-- closes Case Narr -->
+      </ul>
       </li>
       <li class="innovCategory"><span>Analysis</span>
       <ul>
         <li class="homeArtTitle"><span class="homeAuthor">Dylan Higgins, Jake
             Kendall, Ben Lyon</span><a href="http://www.thawing-beyond-8817.herokuapp.com/mobile-money-usage-patterns/">Mobile Money Usage Patterns of Kenyan Small and Medium
           Enterprises</a></li>
-      </ul> <!-- closes Analysis -->
+      </ul>
       </li>
       <li class="innovCategory"><span>Perspectives On Policy</span>
       <ul>
@@ -84,9 +275,9 @@
             Bayrasli, Sara Shroff</span><a href="http://www.thawing-beyond-8817.herokuapp.com/creating-place-future/">Creating A Place For The Future: Strategies For
           Entrepreneurship-Led Development In
           Pakistan</a></li>
-      </ul> <!-- closes persp on policy -->
+      </ul>
       </li>
-    </ul> <!-- closes vol2 -->
+    </ul>
       </li>
 
     <li class="volHeading"> <span> Volume 7, Issue 1 - Winter 2012 </span> <span class="issueTitle">Unleashing Ideas</span>
@@ -98,7 +289,7 @@
           and Medium-Sized Enterprises</a></li>
         <li class="homeArtTitle"><span class="homeAuthor">Ir. Ciputra</span><a href="http://www.thawing-beyond-8817.herokuapp.com/dirt-and-scrap/">From Dirt and Scrap to Gold: A Vision for Entrepreneurship
           in Indonesia</a></li>
-      </ul> <!-- closes Lead Essays -->
+      </ul>
       </li>
       <li class="innovCategory"><span> Case Narratives</span>
       <ul>
@@ -110,7 +301,7 @@
           Empowerment</a></li>
         <li class="homeArtTitle"><span class="homeAuthor">Sean McDonald</span><a href="http://www.thawing-beyond-8817.herokuapp.com/collective-representation-and-last-mile/">Collective Representation and the Last
           Mile</a></li>
-      </ul> <!-- closes case narr -->
+      </ul>
       </li>
       <li class="innovCategory"><span>Analysis</span>
       <ul>
@@ -121,19 +312,19 @@
             McGowan, C. Reed Hodgin, Bart Peintner</span><a href="http://www.thawing-beyond-8817.herokuapp.com/agility-imperative/">The Agility Imperative: Emerging Knowledge Management
           Requirements for Stability Operations in the U.S.
           Army</a></li>
-      </ul> <!-- closes analysis -->
+      </ul>
       </li>
       <li class="innovCategory"><span>Perspectives on Policy</span>
       <ul>
         <li class="homeArtTitle"><span class="homeAuthor">Bryony Everett, Erika Wagner,
             Christopher Barnett</span><a href="http://www.thawing-beyond-8817.herokuapp.com/using-innovation-prizes/">Using Innovation Prizes to Achieve the Millenium Development
           Goals</a></li>
-      </ul> <!-- closes persp on policy -->
+      </ul>
       </li>
-    </ul> <!-- closes issue 2 -->
+    </ul>
     </li>
-    </ul> <!-- closes innovIndex -->
+    </ul>
 
 </div>
-
+-->
 {% endblock %}
