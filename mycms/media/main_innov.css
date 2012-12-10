@@ -196,6 +196,7 @@ display: block !important;
 	font-family: 'Bitter',serif;
 	font-size:20px;
 	font-style:italic;
+	text-decoration:underline;
 }
 
 header #search {
@@ -205,10 +206,12 @@ header #search {
 #issue-blog-nav {
 	padding-right:10px;
 	text-align:right;
+	cursor:pointer;
 }
 #browse-issues{
 	margin-top:116px;
 	margin-bottom:40px;
+	cursor:pointer;
 }
 
 	#about {
@@ -417,3 +420,18 @@ header #search {
 			margin-right:30px;
 		}
 		
+		#main {
+			cursor: pointer;
+		}
+		
+		#main2 {
+			cursor: pointer;
+		}
+		
+		.ui-accordion .ui-accordion-header {
+			border-bottom:1px solid black;
+		}
+		
+		.ui-corner-all {
+			border-radius:0px;
+		}

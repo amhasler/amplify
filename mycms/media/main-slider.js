@@ -32,21 +32,24 @@ $(document).ready(function(){
 		
 
 		if (newLeft==="18%") {
-			if (idClicked==="main"||idClicked==="browse-issues"||myClass===("homeTrigger trigger")&&$blogBox.css("display")!=="block") {
-				$toplist.fadeOut('slow');
-				$slickbox.hide('slow');
-			} else if (idClicked==="main2"||idClicked==="browse-blog"||myClass===("homeTrigger trigger")&&$slickbox.css('display')!=='block') {
-				$blogBox.hide('slow');
-			} else if ($slickbox.css('display')==='block'&&idClicked==="browse-blog") {
+			if ($slickbox.css('display')==='block'&&idClicked==="browse-blog") {
+					console.log('foo');
 					$slickbox.hide('slow');
 					$blogBox.show('slow');
 					return false;
-			} else if ($blogBox.css('display')==='block'&&idClicked==="browse-issues") {
-				$blogBox.hide('slow');
-				$slickbox.show('slow');
-				$toplist.fadeIn('slow');
-				return false;
-			} 
+				} else if ($blogBox.css('display')==='block'&&idClicked==="browse-issues") {
+					$blogBox.hide('slow');
+					$slickbox.show('slow');
+					$toplist.fadeIn('slow');
+					console.log('four');
+					return false;
+				} else if (idClicked==="main"||idClicked==="browse-issues"||myClass===("homeTrigger trigger")&&$blogBox.css("display")!=="block") {
+				$toplist.fadeOut('slow');
+				$slickbox.hide('slow');
+				console.log('one');
+				} else if (idClicked==="main2"||idClicked==="browse-blog"||myClass===("homeTrigger trigger")&&$slickbox.css('display')!=='block') {
+					$blogBox.hide('slow');
+				} 
 		} else if (newLeft==="20px"){
 			if (idClicked==="browse-issues") {
 				$slickbox.show('slow');
